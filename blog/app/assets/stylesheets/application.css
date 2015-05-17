@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+  position: relative;
+  border: 1px dotted black;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  font-family: sans-serif;
+}
+
+.whitespace {
+  white-space: pre;
+  overflow: auto;
+}
+
