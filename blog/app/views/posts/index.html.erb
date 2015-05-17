@@ -1,0 +1,15 @@
+<!-- # HOW THE FUCK DO I DO PARTIALS -->
+<h1>All Posts: </h1>
+<%= link_to 'Make a new post', new_post_path %>
+
+<% @posts.each do |post| %>
+<div>
+  <h3><%= post.title %></h3>
+  <p><%= post.body %></p>
+  <p>
+    <%= link_to 'Show', post_path(post) %> |
+    <%= link_to 'Edit', edit_post_path(post) %> |
+    <%= link_to 'Destroy', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+</div>
+<% end %>
